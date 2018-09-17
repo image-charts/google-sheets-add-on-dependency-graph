@@ -5,6 +5,7 @@ package.json
 package-lock.json
 README.md
 main.test.js
-.circleci
-.git
-coverage
+.circleci/**
+.git/**
+jest.config.js
+coverage/**

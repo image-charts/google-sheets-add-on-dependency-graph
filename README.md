@@ -1,11 +1,11 @@
-Display a dependency graph in Google Sheets (custom formula)
+Insert a dependency graph in Google Sheets (custom formula)
 ============================================================
 
 [![Codecov branch](https://img.shields.io/codecov/c/github/image-charts/google-sheets-add-on-dependency-graph/master.svg)](https://codecov.io/gh/image-charts/google-sheets-add-on-dependency-graph) [![CircleCI branch](https://img.shields.io/circleci/project/github/image-charts/google-sheets-add-on-dependency-graph/master.svg)](https://circleci.com/gh/image-charts/google-sheets-add-on-dependency-graph)
 
 # What is is?
 
-Dependency graph is Google Apps add-ons for Google Sheet that display beautiful dependency image graphs generated with [Image-Charts](https://www.image-charts.com/?google-sheets-add-on-dependency-graph).
+Dependency graph is a Google Apps add-ons for Google Sheet that display beautiful dependency image graphs generated with [Image-Charts](https://www.image-charts.com/?google-sheets-add-on-dependency-graph).
 
 > We've built a roadmap on google spreadsheet but now we can't find a way to visualize the whole dependency graph 😥
 
@@ -17,7 +17,7 @@ Dependency graph is Google Apps add-ons for Google Sheet that display beautiful 
 
 - Open your spreadsheet
 - (todo)
-- `=image(getDependencyGraphURL('Feuille 1'!B2:B23; 'Feuille 1'!F2:F23; "ortho"); 2)`
+- `=image(getDependencyGraphURL(B2:B23; F2:F23; "ortho"); 2)`
 
 See [example](#todo).
 
