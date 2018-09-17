@@ -1,6 +1,12 @@
 {
-  "name": "apps-script-spreadsheet-graph",
+  "name": "google-sheet-graph",
   "version": "1.0.0",
+  "keywords": [
+    "google-sheet",
+    "graph",
+    "graph-viz",
+    "dependency"
+  ],
   "description": "Render dependency graph charts into Google Spreadsheet thanks to Image-Charts!",
   "main": "index.js",
   "scripts": {
@@ -14,14 +20,14 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/image-charts/apps-script-spreadsheet-graph.git"
+    "url": "git+https://github.com/image-charts/google-sheets-add-on-dependency-graph.git"
   },
   "author": "Francois-Guillaume Ribreau <npm@fgribreau.com> (http://fgribreau.com/)",
   "license": "MIT",
   "bugs": {
-    "url": "https://github.com/image-charts/apps-script-spreadsheet-graph/issues"
+    "url": "https://github.com/image-charts/google-sheets-add-on-dependency-graph/issues"
   },
-  "homepage": "https://github.com/image-charts/apps-script-spreadsheet-graph#readme",
+  "homepage": "https://github.com/image-charts/google-sheets-add-on-dependency-graph#readme",
   "devDependencies": {
     "@google/clasp": "^1.5.3",
     "@types/google-apps-script": "0.0.27",
