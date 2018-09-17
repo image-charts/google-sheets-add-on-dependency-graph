@@ -1,0 +1,33 @@
+{
+  "name": "apps-script-spreadsheet-graph",
+  "version": "1.0.0",
+  "description": "Render dependency graph charts into Google Spreadsheet thanks to Image-Charts!",
+  "main": "index.js",
+  "scripts": {
+    "deploy": "clasp push",
+    "open": "clasp open",
+    "test": "jest",
+    "first-run": "clasp login && clasp create 'Google Spreadsheet Graph Viz'",
+    "test:watch": "jest --watch",
+    "test:coverage": "jest --coverage && codecov --disable=gcov",
+    "updtr": "updtr"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/image-charts/apps-script-spreadsheet-graph.git"
+  },
+  "author": "Francois-Guillaume Ribreau <npm@fgribreau.com> (http://fgribreau.com/)",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/image-charts/apps-script-spreadsheet-graph/issues"
+  },
+  "homepage": "https://github.com/image-charts/apps-script-spreadsheet-graph#readme",
+  "devDependencies": {
+    "@google/clasp": "^1.5.3",
+    "@types/google-apps-script": "0.0.27",
+    "codecov": "^3.0.0",
+    "jest": "^23.1.0",
+    "updtr": "^2.0.0"
+  },
+  "dependencies": {}
+}
