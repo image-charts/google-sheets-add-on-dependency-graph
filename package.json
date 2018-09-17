@@ -8,7 +8,7 @@
     "dependency"
   ],
   "description": "Render dependency graph charts into Google Spreadsheet thanks to Image-Charts!",
-  "main": "index.js",
+  "main": "main.js",
   "scripts": {
     "deploy": "clasp push",
     "open": "clasp open",
