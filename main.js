@@ -58,13 +58,7 @@ function DEPENDENCY_GRAPH_URL(itemRows, dependsOnRows, edgeRepresentation) {
     return dependsOnRows.reduce(function(nodes, dependsOn, i) {
       const to = itemRows[i][0];
 
-      const parentDependencies = getParentDependencies(dependsOn);
-
-      if (parentDependencies.length === 0) {
-        nodes[to] = [];
-      }
-
-      parentDependencies.forEach(function(parentDependency) {
+      getParentDependencies(dependsOn).forEach(function(parentDependency) {
         if (!parentDependency) {
           nodes[to] = [];
           return;
