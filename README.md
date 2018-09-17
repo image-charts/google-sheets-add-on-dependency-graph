@@ -22,7 +22,7 @@ Dependency graph is a Google Apps add-ons for Google Sheet that display beautifu
 
 > [Hold my beer](https://twitter.com/FGRibreau/status/1041782155364446208).
 
-[![](docs/screenshot.png)](https://www.youtube.com/watch?v=2T6oHo7FVdI)
+[![](docs/screencast-big.gif)](https://www.youtube.com/watch?v=2T6oHo7FVdI)
 
 # Add-on development
 
