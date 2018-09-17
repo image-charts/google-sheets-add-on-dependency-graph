@@ -2,7 +2,7 @@ var _URL_MAX_LENGTH = 2000;
 /**
  * Get an Image-Charts graph image URL, usage:
  *
- * `=image(getDependencyGraphURL('Feuille 1'!B2:B23; 'Feuille 1'!F2:F23; "ortho"); 2)`
+ * `=image(DEPENDENCY_GRAPH_URL('Feuille 1'!B2:B23; 'Feuille 1'!F2:F23; "ortho"); 2)`
  *
  * @param {A1:A} itemRows the items column range
  * @param {C1:C} dependsOnRows the dependencies column range (each cell must contain comma separated item name)
@@ -10,7 +10,7 @@ var _URL_MAX_LENGTH = 2000;
  * @return The graph dependency image
  * @customfunction
  */
-function getDependencyGraphURL(itemRows, dependsOnRows, edgeRepresentation) {
+function DEPENDENCY_GRAPH_URL(itemRows, dependsOnRows, edgeRepresentation) {
   // items = [row1 'item name 1', row2 'item name 2', row3 'item name 3']
   // dependsOn = [row1 '', row2 'item name 1,item name 3', row3 'item name 2']
   // edgeRepresentation = 'line'
@@ -153,6 +153,6 @@ function getDependencyGraphURL(itemRows, dependsOnRows, edgeRepresentation) {
 
 if (typeof module !== "undefined") {
   // Google script is ES5 :(
-  module.exports.getDependencyGraphURL = getDependencyGraphURL;
+  module.exports.DEPENDENCY_GRAPH_URL = DEPENDENCY_GRAPH_URL;
   module.exports.URL_MAX_LENGTH = _URL_MAX_LENGTH;
 }

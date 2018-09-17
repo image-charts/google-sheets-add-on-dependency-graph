@@ -10,7 +10,7 @@
   "description": "Render dependency graph charts into Google Spreadsheet thanks to Image-Charts!",
   "main": "main.js",
   "scripts": {
-    "deploy": "npm run --silent prepublish && clasp push",
+    "deploy": "npm run --silent prepublish && clasp push && npm-release patch",
     "open": "clasp open",
     "test": "jest",
     "prepublish": "npm run test",

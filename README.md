@@ -17,7 +17,7 @@ Dependency graph is a Google Apps add-ons for Google Sheet that display beautifu
 
 - Open your spreadsheet
 - (todo)
-- `=image(getDependencyGraphURL(B2:B23; F2:F23; "ortho"); 2)`
+- `=image(DEPENDENCY_GRAPH_URL(B2:B23; F2:F23; "ortho"); 2)`
 
 See [example](#todo).
 
@@ -25,17 +25,15 @@ See [example](#todo).
 
 ### Setup
 
+- Enable Apps Script API: https://script.google.com/home/usersettings
 - `npm install`
+- `npm run first-run` to setup clasp
 
-### Push
+### Deploy on Google App Scripts
 
 ```
 npm run deploy
 ```
-
-### First run
-- Then enable Apps Script API: https://script.google.com/home/usersettings
-- `npm run first-run`
 
 
 ### Resources
