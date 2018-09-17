@@ -1,0 +1,10 @@
+node_modules/**
+node_modules/**/.*/**
+node_modules/**/.*
+package.json
+package-lock.json
+README.md
+main.test.js
+.circleci
+.git
+coverage
