@@ -8,6 +8,7 @@ Display a dependency graph in Google Sheets (custom formula)
 Dependency graph is Google Apps add-ons for Google Sheet that display beautiful dependency image graphs generated with [Image-Charts](https://www.image-charts.com/?google-sheets-add-on-dependency-graph).
 
 > We've built a roadmap on google spreadsheet but now we can't find a way to visualize the whole dependency graph 😥
+
 > [Hold my beer](https://twitter.com/FGRibreau/status/1041782155364446208).
 
 ![](https://pbs.twimg.com/media/DnUnQm9XcAAa7fk.jpg)
