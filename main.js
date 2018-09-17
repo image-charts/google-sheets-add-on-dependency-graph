@@ -58,16 +58,25 @@ function DEPENDENCY_GRAPH_URL(itemRows, dependsOnRows, edgeRepresentation) {
     return dependsOnRows.reduce(function(nodes, dependsOn, i) {
       const to = itemRows[i][0];
 
-      getParentDependencies(dependsOn).forEach(function(parentDependency) {
+      const parentDependencies = getParentDependencies(dependsOn);
+
+      if (parentDependencies.length === 0) {
+        nodes[to] = [];
+      }
+
+      parentDependencies.forEach(function(parentDependency) {
         if (!parentDependency) {
+          nodes[to] = [];
           return;
         }
+
         if (!nodes[parentDependency]) {
           nodes[parentDependency] = [];
         }
 
         nodes[parentDependency].push(to);
       });
+
       return nodes;
     }, {});
   }
@@ -108,21 +117,14 @@ function DEPENDENCY_GRAPH_URL(itemRows, dependsOnRows, edgeRepresentation) {
     );
   }
 
-  function reduce(obj, callback, initial) {
+  function reduce(obj, callback, memo) {
     "use strict";
-    var key,
-      lastvalue,
-      firstIteration = true;
+    var key;
     for (key in obj) {
       if (!obj.hasOwnProperty(key)) continue;
-      if (firstIteration) {
-        firstIteration = false;
-        lastvalue = obj[key];
-        continue;
-      }
-      lastvalue = callback(lastvalue, obj[key], key, obj);
+      memo = callback(memo, obj[key], key, obj);
     }
-    return lastvalue;
+    return memo;
   }
 
   function inArray(arr, value) {
