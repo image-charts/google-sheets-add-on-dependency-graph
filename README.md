@@ -10,6 +10,10 @@ Dependency graph is a Google Apps add-ons for Google Sheet that display beautifu
 - [🤩 Demo](https://docs.google.com/spreadsheets/d/1xucvdzTcDqMYAgL2wAS0UpARWyHyz9-_ratqyLZKeME/edit#gid=0)
 - [📹 Screencast](https://www.youtube.com/watch?v=2T6oHo7FVdI)
 
+<p align="center">
+<a href="https://www.youtube.com/watch?v=2T6oHo7FVdI"><img src="docs/screencast-big.gif"/></a>
+</p>
+
 # Usage
 
 - Open your spreadsheet
@@ -22,9 +26,7 @@ Dependency graph is a Google Apps add-ons for Google Sheet that display beautifu
 
 > [Hold my beer](https://twitter.com/FGRibreau/status/1041782155364446208).
 
-<p align="center">
-<a href="https://www.youtube.com/watch?v=2T6oHo7FVdI"><img src="docs/screencast-big.gif"/></a>
-</p>
+
 
 # Add-on development
 
