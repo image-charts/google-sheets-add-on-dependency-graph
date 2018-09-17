@@ -113,14 +113,6 @@ function getDependencyGraphURL(itemRows, dependsOnRows, edgeRepresentation) {
     var key,
       lastvalue,
       firstIteration = true;
-    if (typeof callback !== "function") {
-      throw new TypeError(callback + "is not a function");
-    }
-    if (arguments.length > 2) {
-      // initial value set
-      firstIteration = false;
-      lastvalue = initial;
-    }
     for (key in obj) {
       if (!obj.hasOwnProperty(key)) continue;
       if (firstIteration) {
@@ -129,9 +121,6 @@ function getDependencyGraphURL(itemRows, dependsOnRows, edgeRepresentation) {
         continue;
       }
       lastvalue = callback(lastvalue, obj[key], key, obj);
-    }
-    if (firstIteration) {
-      throw new TypeError("Reduce of empty object with no initial value");
     }
     return lastvalue;
   }
