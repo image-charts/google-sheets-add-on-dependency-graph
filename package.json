@@ -1,6 +1,6 @@
 {
   "name": "google-sheet-graph",
-  "version": "1.0.0",
+  "version": "0.0.0",
   "keywords": [
     "google-sheet",
     "graph",
@@ -33,6 +33,7 @@
     "@types/google-apps-script": "0.0.27",
     "codecov": "^3.1.0",
     "jest": "^23.6.0",
+    "npm-release": "^1.0.0",
     "updtr": "^2.0.0"
   },
   "dependencies": {}
