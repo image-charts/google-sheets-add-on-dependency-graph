@@ -38,7 +38,11 @@ function DEPENDENCY_GRAPH_URL(itemRows, dependsOnRows, edgeRepresentation) {
   // String => Array[String]
   // 'item name 1,item name 3' => ['item name 1','item name 3']
   function getParentDependencies(dependsOn) {
-    return String(dependsOn || "").split(",");
+    return String(dependsOn || "")
+      .split(",")
+      .map(function(a) {
+        return a.trim();
+      });
   }
 
   /**

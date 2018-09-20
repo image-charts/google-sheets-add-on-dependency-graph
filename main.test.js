@@ -30,6 +30,14 @@ describe("DEPENDENCY_GRAPH_URL", () => {
     );
   });
 
+  it("should trim() items", () => {
+    expect(
+      unescape(DEPENDENCY_GRAPH_URL(["a", "b", "c"], ["", "a ,c"], "spline"))
+    ).toEqual(
+      'https://image-charts.com/chart?cht=gv&chl=digraph {splines="spline";rankdir=LR;"a"->{"b"};"c"->{"b"}}'
+    );
+  });
+
   it("should work", () => {
     expect(
       DEPENDENCY_GRAPH_URL(items.slice(0, 50), dependsOn.slice(0, 50))
