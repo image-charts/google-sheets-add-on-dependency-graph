@@ -156,3 +156,51 @@ if (typeof module !== "undefined") {
   module.exports.DEPENDENCY_GRAPH_URL = DEPENDENCY_GRAPH_URL;
   module.exports.URL_MAX_LENGTH = _URL_MAX_LENGTH;
 }
+
+/**
+ * Runs when the add-on is installed.
+ */
+function onInstall() {
+  onOpen();
+}
+
+var MESSAGES = {
+  HOW_TO_USE_FORMULA: "How to use `DEPENDENCY_GRAPH_URL` formula",
+  REPORT_ISSUE: "Report an issue",
+  IMAGE_CHARTS: "Learn more about Image-Charts",
+  IMAGE_CHARTS_WATERMARK: "How to remove Image-Charts watermark"
+};
+/**
+ * Runs when the document is opened, creating the add-on's menu. Custom function
+ * add-ons need at least one menu item, since the add-on is only enabled in the
+ * current spreadsheet when a function is run.
+ */
+function onOpen() {
+  SpreadsheetApp.getUi()
+    .createAddonMenu()
+    .addItem(MESSAGES.HOW_TO_USE_FORMULA, "openScreencast")
+    .addItem(MESSAGES.REPORT_ISSUE, "openIssue")
+    .addItem(MESSAGES.IMAGE_CHARTS, "openImageCharts")
+    .addItem(MESSAGES.IMAGE_CHARTS_WATERMARK, "openImageChartsWatermark")
+    .addToUi();
+}
+
+function openScreencast() {
+  var html = HtmlService.createHtmlOutputFromFile("screencast");
+  SpreadsheetApp.getUi().showModalDialog(html, MESSAGES.HOW_TO_USE_FORMULA);
+}
+
+function openIssue() {
+  var html = HtmlService.createHtmlOutputFromFile("issues");
+  SpreadsheetApp.getUi().showModalDialog(html, MESSAGES.REPORT_ISSUE);
+}
+
+function openImageCharts() {
+  var html = HtmlService.createHtmlOutputFromFile("website");
+  SpreadsheetApp.getUi().showModalDialog(html, MESSAGES.IMAGE_CHARTS);
+}
+
+function openImageChartsWatermark() {
+  var html = HtmlService.createHtmlOutputFromFile("watermark");
+  SpreadsheetApp.getUi().showModalDialog(html, MESSAGES.IMAGE_CHARTS_WATERMARK);
+}
