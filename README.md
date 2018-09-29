@@ -43,19 +43,25 @@ npm run deploy
 ```
 
 
+
 Title: Dependency graph visualization
 Short description: Sheet add-on that display beautiful dependency image graphs to visualize project roadmap or anything else that has dependencies.
 
 Add-on Type: Sheets
 Help url: https://www.youtube.com/watch?v=2T6oHo7FVdI
 Report issue url: https://stackoverflow.com/questions/tagged/image-charts
-Post-install tip: Use the =DEPENDENCY_GRAPH_URL() formula
+Post-install tip: Create your first dependency chart by creating a two columns table. Then use the =IMAGE(DEPENDENCY_GRAPH_URL(itemRows, dependsOnRows)) formula to display the dependency chart inside a cell. 
 
 Detailed description: A Google Sheet add-on that display beautiful dependency image graphs. Perfect for project roadmap, visualizing multiple dependencies, mind-map, etc...
+
+### Validate auth
+
+Follow [the official tutorial](https://developers.google.com/apps-script/guides/client-verification).
 
 ### Resources
 
 - https://developers.google.com/gsuite/add-ons/overview
+- https://developers.google.com/gsuite/add-ons/how-tos/publish-addons
 - https://github.com/gsuitedevs/apps-script-samples
 - https://stackoverflow.com/a/37056733/745121
 - https://github.com/oshliaer/google-apps-script-awesome-list

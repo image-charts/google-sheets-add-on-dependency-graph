@@ -165,10 +165,10 @@ function onInstall() {
 }
 
 var MESSAGES = {
-  HOW_TO_USE_FORMULA: "How to use `DEPENDENCY_GRAPH_URL` formula",
+  HOW_TO_USE: "Watch step-by-step guide",
   REPORT_ISSUE: "Report an issue",
   IMAGE_CHARTS: "Learn more about Image-Charts",
-  IMAGE_CHARTS_WATERMARK: "How to remove Image-Charts watermark"
+  IMAGE_CHARTS_WATERMARK: "Learn how to remove the watermark"
 };
 /**
  * Runs when the document is opened, creating the add-on's menu. Custom function
@@ -178,16 +178,16 @@ var MESSAGES = {
 function onOpen() {
   SpreadsheetApp.getUi()
     .createAddonMenu()
-    .addItem(MESSAGES.HOW_TO_USE_FORMULA, "openScreencast")
-    .addItem(MESSAGES.REPORT_ISSUE, "openIssue")
+    .addItem(MESSAGES.HOW_TO_USE, "openScreencast")
     .addItem(MESSAGES.IMAGE_CHARTS, "openImageCharts")
     .addItem(MESSAGES.IMAGE_CHARTS_WATERMARK, "openImageChartsWatermark")
+    .addItem(MESSAGES.REPORT_ISSUE, "openIssue")
     .addToUi();
 }
 
 function openScreencast() {
   var html = HtmlService.createHtmlOutputFromFile("screencast");
-  SpreadsheetApp.getUi().showModalDialog(html, MESSAGES.HOW_TO_USE_FORMULA);
+  SpreadsheetApp.getUi().showModalDialog(html, MESSAGES.HOW_TO_USE);
 }
 
 function openIssue() {
