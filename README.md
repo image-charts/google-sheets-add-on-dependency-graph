@@ -42,17 +42,13 @@ Dependency graph is a Google Apps add-ons for Google Sheet that display beautifu
 npm run deploy
 ```
 
-
-
-Title: Dependency graph visualization
-Short description: Sheet add-on that display beautiful dependency image graphs to visualize project roadmap or anything else that has dependencies.
-
-Add-on Type: Sheets
-Help url: https://www.youtube.com/watch?v=2T6oHo7FVdI
-Report issue url: https://stackoverflow.com/questions/tagged/image-charts
-Post-install tip: Create your first dependency chart by creating a two columns table. Then use the =IMAGE(DEPENDENCY_GRAPH_URL(itemRows, dependsOnRows)) formula to display the dependency chart inside a cell. 
-
-Detailed description: A Google Sheet add-on that display beautiful dependency image graphs. Perfect for project roadmap, visualizing multiple dependencies, mind-map, etc...
+- Title: Dependency graph visualization
+- Short description: Sheet add-on that display beautiful dependency image graphs to visualize project roadmap or anything else that has dependencies.
+- Add-on Type: Sheets
+- Help url: https://www.youtube.com/watch?v=2T6oHo7FVdI
+- Report issue url: https://stackoverflow.com/questions/tagged/image-charts
+- Post-install tip: Create your first dependency chart by defining a two columns table. Then use the =IMAGE(DEPENDENCY_GRAPH_URL(itemRows, dependsOnRows)) formula to display the dependency chart inside a cell.
+- Detailed description: A Google Sheet add-on that display beautiful dependency image graphs. Perfect for project roadmap, visualizing multiple dependencies, mind-map, etc...
 
 ### Validate auth
 
