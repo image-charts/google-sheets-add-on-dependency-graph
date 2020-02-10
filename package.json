@@ -30,7 +30,7 @@
   },
   "homepage": "https://github.com/image-charts/google-sheets-add-on-dependency-graph#readme",
   "devDependencies": {
-    "@google/clasp": "^1.5.3",
+    "@google/clasp": "^2.3.0",
     "@types/google-apps-script": "0.0.27",
     "codecov": "^3.1.0",
     "jest": "^23.6.0",
